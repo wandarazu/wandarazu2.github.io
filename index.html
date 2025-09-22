@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KubSU - Пример страницы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/100x50" alt="Логотип KubSU" class="logo">s
+                <h1 class="site-title">Кубанский государственный университет</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav id="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#science">Наука</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <section id="links-section">
+            <h2>Примеры гиперссылок</h2>
+            
+            <ul class="links-list">
+                <li><a href="http://kubsu.ru">1) Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                <li><a href="https://kubsu.ru">2) Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                <li><a href="https://kubsu.ru"><img src="https://via.placeholder.com/100x50" alt="KubSU Logo">3) Ссылка-изображение</a></li>
+                <li><a href="/faculty">4) Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li><a href="/">5) Сокращенная ссылка на главную страницу</a></li>
+                <li><a href="#table-section">6) Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">7) Ссылка с тремя параметрами в URL</a></li>
+                <li><a href="https://example.com/page?id=12345">8) Ссылка с параметром id в URL</a></li>
+                <li><a href="current.html">9) Относительная на страницу в текущем каталоге</a></li>
+                <li><a href="about/index.html">10) Относительная на страницу в каталоге about</a></li>
+                <li><a href="../page.html">11) Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../page.html">12) Относительная на страницу в каталоге двумя уровнями выше</a></li>
+                <li>13) Контекстная в тексте абзаца: <a href="https://kubsu.ru">Кубанский государственный университет</a> - ведущий вуз Краснодарского края.</li>
+                <li><a href="https://example.com/page#section">14) Ссылка на фрагмент страницы стороннего сайта</a></li>
+                <li>
+                    15) Ссылки из прямоугольных и круглых областей картинки:
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65982a2cdf834a4869595884_65982a32df834a4869595966/scale_1200"  width="300" alt="Пример изображения с областями" usemap="#image-map">
+                    <map name="image-map">
+                        <area shape="rect" coords="0,0,50,50" href="https://kubsu.ru" alt="Прямоугольная область">
+                        <area shape="circle" coords="100,100,50" href="https://kubsu.ru/en" alt="Круглая область">
+                    </map>
+                </li>
+                <li><a href="">16) Ссылка с пустым href</a></li>
+                <li><a>17) Ссылка без href</a></li>
+                <li><a href="https://kubsu.ru" rel="nofollow">18) Ссылка, по которой запрещен переход поисковикам</a></li>
+                <li><a href="https://kubsu.ru" rel="noindex">19) Запрещенная для индексации поисковиками</a></li>
+                <li>
+                    20) Нумерованный список ссылок с подписями title:
+                    <ol>
+                        <li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">KubSU</a></li>
+                        <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                        <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:password@ftp.example.com/file.txt">21) Ссылка на файл на сервере FTP с авторизацией</a></li>
+            </ul>
+        </section>
+
+        <!-- Таблица -->
+        <section id="table-section">
+            <h2>Пример таблицы</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Факультет</th>
+                        <th>Специальность</th>
+                        <th>Количество студентов</th>
+                        <th>Год основания</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Математики и компьютерных наук</td>
+                        <td>Прикладная математика</td>
+                        <td>120</td>
+                        <td>1970</td>
+                    </tr>
+                    <tr>
+                        <td>Компьютерные науки</td>
+                        <td>180</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Филологии</td>
+                        <td>Русский язык и литература</td>
+                        <td>90</td>
+                        <td>1920</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Экономический</td>
+                        <td>Экономика</td>
+                        <td>150</td>
+                        <td>1990</td>
+                    </tr>
+                    <tr>
+                        <td>Менеджмент</td>
+                        <td>130</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Юридический</td>
+                        <td>Юриспруденция</td>
+                        <td>200</td>
+                        <td>1992</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Форма -->
+        <section id="form-section">
+            <h2>Форма регистрации</h2>
+            <form id="registration-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullname">ФИО:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Пол:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Мужской</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Женский</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="languages">Любимый язык программирования:</label>
+                    <select id="languages" name="languages" multiple size="6">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskel">Haskel</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                    <small>Для выбора нескольких вариантов удерживайте Ctrl (Cmd на Mac)</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Биография:</label>
+                    <textarea id="bio" name="bio" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">С контрактом ознакомлен(а)</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Сохранить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer id="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Кубанский государственный университет. Все права защищены.</p>
+            <p>Адрес: г. Краснодар, ул. Ставропольская, 149</p>
+        </div>
+    </footer>
+</body>
+</html>
